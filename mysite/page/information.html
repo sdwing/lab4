@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<style type="text/css">
+.title {
+	background-color: #9CF;
+	width: auto;
+	height: 800px;
+}
+</style>
+<body text="#000099">
+<div class="title" align="center" style="border:3px solid #99F">
+  <h1><a href="/home/">O(∩_∩)O</a></h1>
+  <h1>图 书 信 息</h1>
+  <table width="90%" border="1">
+    <tr>
+      <th scope="col">书名</th>
+      <th scope="col">作者</th>
+      <th scope="col">ISBN</th>
+      <th scope="col">出版社</th>
+      <th scope="col">出版日期</th>
+      <th scope="col">价格</th>
+    </tr>
+    <tr>
+      <td><div align="center">{{Infor.Title}}</div></td>
+      <td><div align="center">{{Infor.AuthorID.Name}}</div></td>
+      <td><div align="center">{{Infor.ISBN}}</div></td>
+      <td><div align="center">{{Infor.Publisher}}</div></td>
+      <td><div align="center">{{Infor.Publishdate}}</div></td>
+      <td><div align="center">{{Infor.Price}}</div></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <table width="90%" border="1">
+    <tr>
+      <th scope="col">作者国籍</th>
+      <th scope="col">作者年龄</th>
+      <th scope="col"><p>作者ID</p></th>
+    </tr>
+    <tr>
+      <td><div align="center">{{Infor.AuthorID.Name}}</div></td>
+      <td><div align="center">{{Infor.AuthorID.Age}}</div></td>
+      <td><div align="center">{{Infor.AuthorID.AuthorID}}</div></td>
+    </tr>
+  </table>
+  <p>返回主页</p>
+  <p>&nbsp;</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<style type="text/css">
+.title {
+	background-color: #9CF;
+	width: auto;
+	height: 800px;
+}
+</style>
+<body text="#000099">
+<div class="title" align="center" style="border:3px solid #99F">
+  <h1><a href="/home/">＞ˍ＜</a></h1>
+  <h1>书 目 信 息</h1>
+  <p>&nbsp;</p>
+<table width="90%" border="1">
+  <tr>
+    <th scope="col">书名</th>
+    <th scope="col">出版社</th>
+    <th scope="col">操作</th>
+    </tr>
+    {%for Book in book_list%}
+  <tr>
+    <td><div align="center"><a href="/information/?ID={{Book.ISBN}}">{{Book.Title}}</a></div></td>
+    <td><div align="center">{{Book.Publisher}}</div></td>
+    <td><div align="center"><a href="/delete/?ID={{Book.ISBN}}">删除</a></div></td>
+    </tr>
+    {%endfor%}
+</table>
+<p><a href="/addbookpage/?ID={{authorid}}">为该作者添加新的图书</a></p>
+</div>
+</body>
+</html>

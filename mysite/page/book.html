@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+h1 {
+	font-size: 36px;
+	color: #009;
+}
+.title {
+	background-color: #9CF;
+	width: auto;
+	height: 800px;
+}
+</style>
+</head>
+
+<body text="#000099">
+<div class="title" align="center" style="border:3px solid #9966FF">
+  <h1><a href="/home/">=￣ω￣= </a></h1>
+  <h1>加 入 书 目</h1>
+  <p>&nbsp;</p>
+  <form id="form1" name="form1" method="post" action="/addbook/">
+    <p>书名
+      <input type="text" name="Title" id="textfield" />
+    </p>
+    <p>ISBN
+      <input type="text" name="ISBN" id="textfield2" />
+    </p>
+    <p>出版社
+      <input type="text" name="Publisher" id="textfield5" />
+    </p>
+    <p>出版日期
+      <input type="text" name="Publishdate" id="textfield6" />
+    </p>
+    <p>价格
+      <input type="text" name="Price" id="textfield7" />
+    </p>
+    <p>  
+      <input type="hidden" name="AuthorID" value="{{ID}}" />
+    </p>
+    <p>
+      <input type="submit" name="button" id="button" value="提交" />
+    </p>
+  </form>
+  <p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+</body>
+</html>

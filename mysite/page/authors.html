@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+h1 {
+	font-size: 36px;
+	color: #009;
+}
+.search {
+	background-color: #9CF;
+	width: auto;
+	margin-top: 20px;
+	height: 800px;
+}
+body {
+	margin-left: 50px;
+}
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000099">
+<div class="search" style="border:3px solid #9966FF">
+  <h1 align="center"><a href="/home/"> (⊙ˍ⊙)</a></h1>
+  <h1 align="center">作 者 信 息</h1>
+  <div align="center">
+    <table width="90%" border="1">
+      <caption>
+        搜索结果
+      </caption>
+      <tr>
+        <th scope="col">姓名</th>
+        <th scope="col">国籍</th>
+        <th scope="col">年龄</th>
+        <th scope="col">作者ID</th>
+      </tr>
+      {%for Author in author_list%}
+      <tr>
+        <td><div align="center"><a href="/searchbook/?ID={{Author.AuthorID}}">{{Author.Name}}</a></div></td>
+        <td><div align="center">{{Author.Country}}</div></td>
+        <td><div align="center">{{Author.Age}}</div></td>
+        <td><div align="center">{{Author.AuthorID}}</div></td>
+      </tr>
+      {%endfor%}
+    </table>
+  </div>
+  <div align="center"></div>
+<p align="center"><a href="/addauthorpage/">未找到？添加新的作者</a></p>
+</div>
+</body>
+</html>
